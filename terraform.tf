@@ -6,29 +6,21 @@ terraform {
       source  = "hashicorp/azurerm"
       version = ">= 3.5.0"
     }
-    #http = {
-    #  source  = "hashicorp/http"
-    #  version = ">= 3.3.0"
-    #}
-    #docker = {
-    #  source  = "kreuzwerker/docker"
-    #  version = ">= 3.0.1"
-    #}
   }
 
   backend "azurerm" {
-    resource_group_name = "TerraformState"
-    storage_account_name = "TerraformState292"
-    container_name = "tfstate"
-    key = "terraform.state"
-    }
+    resource_group_name  = "TerraformState"
+    storage_account_name = "terraformstate292"
+    container_name       = "tfstate"
+    key                  = "terraform.state"
+  }
 
-#  cloud {
-#    organization = "WRTech"
-#    workspaces {
-#      name = "DenOps"
-#    }
-#  }
+  cloud {
+    organization = "WRTech"
+    workspaces {
+      name = "DenOps"
+    }
+  }
 }
 
 provider "azurerm" {

@@ -15,12 +15,12 @@ terraform {
     key                  = "terraform.state"
   }
 
-  cloud {
-    organization = "WRTech"
-    workspaces {
-      name = "DenOps"
-    }
-  }
+  #cloud {
+  #  organization = "WRTech"
+  #  workspaces {
+  #    name = "DenOps"
+  #  }
+  #}
 }
 
 provider "azurerm" {

@@ -8,12 +8,26 @@ terraform {
     }
   }
 
-  backend "azurerm" {}
-#    resource_group_name  = "TerraformState"
-#    storage_account_name = "terraformstate292"
-#    container_name       = "tfstate"
-#    key                  = "terraform.state"
+  # https://developer.hashicorp.com/terraform/language/settings/backends/azurerm
+  backend "azurerm" {
+    resource_group_name  = "TerraformState"
+    storage_account_name = "terraformstate292"
+    container_name       = "tfstate"
+    key                  = "HwRawlKencS36D8dK8ijvKQ6bJTzFBKSSpFNbTVtK4tF3A7Wp56IWPdchWlzHwTuISqP0CWYTliZ+ASttG7Xpw==" #"terraform.state"
+  }
+
+#terraform {
+#  backend "azurerm" {
+#    storage_account_name  = "your_storage_account_name"
+#    container_name       = "your_container_name"
+#    key                  = "your_state_file_name"
+#    resource_group_name  = "your_resource_group_name"
+#    subscription_id      = "your_subscription_id"
+#    client_id            = "your_client_id"
+#    client_secret        = "your_client_secret"
+#    tenant_id            = "your_tenant_id"
 #  }
+#}
 
   #cloud {
   #  organization = "WRTech"

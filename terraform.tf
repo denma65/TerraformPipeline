@@ -8,12 +8,12 @@ terraform {
     }
   }
 
-  backend "azurerm" {
-    resource_group_name  = "TerraformState"
-    storage_account_name = "terraformstate292"
-    container_name       = "tfstate"
-    key                  = "terraform.state"
-  }
+  backend "azurerm" {}
+#    resource_group_name  = "TerraformState"
+#    storage_account_name = "terraformstate292"
+#    container_name       = "tfstate"
+#    key                  = "terraform.state"
+#  }
 
   #cloud {
   #  organization = "WRTech"

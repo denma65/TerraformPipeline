@@ -13,7 +13,7 @@ terraform {
     resource_group_name  = "TerraformState"
     storage_account_name = "terraformstate292"
     container_name       = "tfstate"
-    key                  = "HwRawlKencS36D8dK8ijvKQ6bJTzFBKSSpFNbTVtK4tF3A7Wp56IWPdchWlzHwTuISqP0CWYTliZ+ASttG7Xpw==" #"terraform.state"
+    key                  = "terraform.state"
   }
 
 #terraform {

@@ -16,18 +16,18 @@ terraform {
     key                  = "terraform.state"
   }
 
-#terraform {
-#  backend "azurerm" {
-#    storage_account_name  = "your_storage_account_name"
-#    container_name       = "your_container_name"
-#    key                  = "your_state_file_name"
-#    resource_group_name  = "your_resource_group_name"
-#    subscription_id      = "your_subscription_id"
-#    client_id            = "your_client_id"
-#    client_secret        = "your_client_secret"
-#    tenant_id            = "your_tenant_id"
-#  }
-#}
+  #terraform {
+  #  backend "azurerm" {
+  #    storage_account_name  = "your_storage_account_name"
+  #    container_name       = "your_container_name"
+  #    key                  = "your_state_file_name"
+  #    resource_group_name  = "your_resource_group_name"
+  #    subscription_id      = "your_subscription_id"
+  #    client_id            = "your_client_id"
+  #    client_secret        = "your_client_secret"
+  #    tenant_id            = "your_tenant_id"
+  #  }
+  #}
 
   #cloud {
   #  organization = "WRTech"

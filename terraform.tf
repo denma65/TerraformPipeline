@@ -6,6 +6,10 @@ terraform {
       source  = "hashicorp/azurerm"
       version = ">= 3.5.0"
     }
+    azuredevops = {
+      source  = "microsoft/azuredevops"
+      version = ">=0.1.0"
+    }
   }
 
   # https://developer.hashicorp.com/terraform/language/settings/backends/azurerm

@@ -34,8 +34,8 @@ override.tf.json
 terraform.rc
 
 # Ignore all executables
-*.exe
+#*.exe
 
-.terraform\providers\
+#.terraform\providers\
 #.terraform\
 #.terraform.lock.hcl

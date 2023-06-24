@@ -38,4 +38,4 @@ terraform.rc
 
 #.terraform\providers\
 #.terraform\
-#.terraform.lock.hcl
+.terraform.lock.hcl

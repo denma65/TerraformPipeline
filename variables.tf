@@ -1,6 +1,6 @@
 locals {
   global_tags = {
-    Organisation = DenOps
+    Organisation = "DenOps"
   }
 }
 

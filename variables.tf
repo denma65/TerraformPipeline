@@ -1,12 +1,12 @@
 locals {
   global_tags = {
-    Organisation = var.resourcegroup_Name
+    Organisation = DenOps
   }
 }
 
 variable "default_Region" {
   type    = string
-  default = ""
+  default = "UkSouth"
 }
 
 variable "default_VM_AdminUserName" {
